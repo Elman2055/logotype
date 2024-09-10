@@ -1,0 +1,132 @@
+.container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.background {
+  width: 100%;
+  object-fit: cover;
+}
+
+.recomendationTitle {
+  color: #000;
+  text-align: center;
+  font-size: clamp(1.563rem, -0.938rem + 2.5vw, 3.125rem);
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.mobileCategories {
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+  margin-bottom: 20px;
+}
+
+.mobileCategories::-webkit-scrollbar {
+  display: none;
+}
+
+.mobileCategories button {
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+  border: 1px solid #000;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  gap: 10px;
+  margin: 0 0 5% 0;
+}
+
+.card {
+  cursor: pointer;
+  height: 270px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 20px;
+  margin-top: 70%;
+}
+
+.firstRowCardImage {
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: clamp(0.688rem, 0.097rem + 0.92vw, 1.25rem);
+  padding-top: 20px;
+}
+
+.card p:nth-child(3) {
+  font-size: clamp(1.125rem, 0.525rem + 0.6vw, 1.5rem);
+  padding-top: 10px;
+}
+
+.price {
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+}
+
+.buy {
+  cursor: pointer;
+  border: none;
+  padding: 12px 0;
+  color: #fff;
+  background-color: #000;
+  border-radius: 10px;
+  font-size: clamp(0.875rem, -0.225rem + 1.1vw, 1.563rem);
+}
+
+.downBackground {
+  width: 100%;
+}
+
+.minimalism {
+  margin: 8% 0 2% 0;
+}
+
+@media (min-width: 1600px) {
+  .card {
+    margin-top: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cardsContainer {
+    grid-template-columns: repeat(1, minmax(200px, 300px));
+    justify-content: center;
+  }
+
+  .backgroundImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .background,
+  .downBackground {
+    width: 400px;
+    max-width: 100%;
+  }
+
+  .downBackground {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 720px) {
+  .mobileCategories {
+    justify-content: normal;
+  }
+}

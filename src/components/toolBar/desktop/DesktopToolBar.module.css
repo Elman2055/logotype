@@ -1,0 +1,48 @@
+.container {
+  margin: 30px auto;
+  width: 90%;
+  background-color: #000000;
+  color: #ffff;
+  padding: 0 10px 0 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoLink {
+  width: 12%;
+}
+
+.logo {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+nav a p {
+  font-size: clamp(0.688rem, 0.003rem + 1.07vw, 1.875rem);
+}
+
+nav {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolBarImages {
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+
+.images {
+  width: 32%;
+}
+
+.profileImage {
+  margin-left: 10px;
+}
