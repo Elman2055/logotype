@@ -123,6 +123,10 @@
   .downBackground {
     margin-top: 5%;
   }
+
+  .cardsContainer {
+    margin: 0 0 20% 0;
+  }
 }
 
 @media (max-width: 720px) {

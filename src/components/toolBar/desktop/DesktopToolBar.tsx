@@ -10,7 +10,7 @@ const DesktopToolBar = () => {
       <NavLink to={"/"} className={styles.logoLink}>
         <img src={logo} alt="logo" className={styles.logo} />
       </NavLink>
-      <nav>
+      <nav className={styles.navContent}>
         <NavLink to={"category/Минималистичные"}>
           <p>МИНИМАЛИЗМ</p>
         </NavLink>

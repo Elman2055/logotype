@@ -1,9 +1,16 @@
 import { TCategory } from "../../types/types.data";
 import { useNavigate } from "react-router-dom";
 import useDesktop from "../../hooks/useDesktop";
+import Pagination from "@mui/material/Pagination";
 import styles from "./Category.module.css";
 
-const Category = ({ products, category }: TCategory) => {
+const Category = ({
+  products,
+  category,
+  totalPages,
+  page,
+  setPage,
+}: TCategory) => {
   const navigate = useNavigate();
   const isDesktop = useDesktop();
 
@@ -62,6 +69,21 @@ const Category = ({ products, category }: TCategory) => {
               <button className={styles.buy}>КУПИТЬ</button>
             </div>
           ))}
+      </div>
+      <div className={styles.pagination}>
+        {totalPages > 1 && (
+          <Pagination
+            count={totalPages}
+            page={page}
+            size={isDesktop ? "large" : "medium"}
+            shape="rounded"
+            onChange={(event, value) => {
+              setPage(value);
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+            color="primary"
+          />
+        )}
       </div>
     </div>
   );

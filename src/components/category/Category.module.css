@@ -95,6 +95,18 @@
   padding: 10px 10px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+@media (min-width: 1600px) {
+  .card {
+    margin-top: 85%;
+  }
+}
+
 @media (max-width: 1024px) {
   .cardsContainer {
     grid-template-columns: repeat(1, minmax(200px, 300px));
@@ -112,6 +124,10 @@
 
   .description {
     margin: 20px 0;
+  }
+
+  .cardsContainer {
+    margin: 0 0 20% 0;
   }
 }
 

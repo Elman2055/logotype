@@ -23,11 +23,11 @@ a {
   color: #ffff;
 }
 
-nav a p {
+.navContent a p {
   font-size: clamp(0.688rem, 0.003rem + 1.07vw, 1.875rem);
 }
 
-nav {
+.navContent {
   width: 60%;
   display: flex;
   justify-content: space-between;

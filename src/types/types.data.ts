@@ -16,4 +16,7 @@ export type TMain = {
 export type TCategory = {
   products: TProducts[];
   category: string;
+  totalPages: number;
+  page: number;
+  setPage: (page: number) => void;
 };
